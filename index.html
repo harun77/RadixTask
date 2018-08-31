@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Radix</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Radix">
+	<meta name="keywords" content="radix">
+	<meta name="author" content="Radix">
+	
+	<!--Start Links for bootstrap-->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script defer src="font-awesome/css/all.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--End links for bootstrap-->
+	
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- start header -->
+	<div class="row">
+		<div class="header" id="header">
+			<div class="col-md-12">
+				<div class="text-right">
+					<p>Network status: <b>CONNECTED</b></p>
+					<p>Version: 1.1.1-alpha</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- start body section -->
+	<div class="row" id="app">
+		<div class="total_body">
+
+			<!-- start left side -->
+			<div class="col-md-2 col-sm-2 col-lg-2 col-xs-3">
+				<div id="left_side">
+					<ul class="left_menu">
+						<li><img src="img/logo.png" class="img img-responsive"></li>
+						<br><br>
+						<li><a href="#" class="active">Wallet</a></li>
+						<li><a href="#">Messaging</a></li>
+					</ul>
+					<div class="left_foot">
+						Export Wallet
+					</div>
+				</div>
+			</div>
+			<!-- end left side -->
+
+			<!-- start main body -->
+			<div class="col-md-7 col-sm-7 col-lg-7"  style="padding: 0;">
+				<div class="main_body" id="main_body">
+					<h4>WALLET</h4>
+					<p>Test Rads</p>
+					<br>
+					<p>BALANCE</p>
+					<h4>109.49997</h4>
+					<br><br>
+					<p>Recent transaction</p>
+					<br><br>
+					<ul>
+						<li>
+							<div style="float: left;width: 70px;">
+								<p style="font-size: 18px;margin-top: 7px;">8:33:52</p>
+							</div>
+							<div style="float: left;padding: 0px 10px;">
+								<img src="img/download.png" class="img img-responsive">
+							</div>
+							<div>
+								<p><b>Received Test Rads</b></p>
+								<p>From Faucert</p>
+							</div>
+						</li>
+						<li>
+							<div style="float: left;width: 70px;">
+								<p style="font-size: 18px;margin-top: 7px;">13:43:48</p>
+							</div>
+							<div style="float: left;padding: 0px 10px;">
+								<img src="img/download.png" class="img img-responsive">
+							</div>
+							<div>
+								<p><b>Received Test Rads</b></p>
+								<p>From Faucert</p>
+							</div>
+						</li>
+						<li>
+							<div style="float: left;width: 70px;">
+								<p style="font-size: 18px;margin-top: 7px;">16:08:16</p>
+							</div>
+							<div style="float: left;padding: 0px 10px;">
+								<img src="img/download.png" class="img img-responsive">
+							</div>
+							<div>
+								<p><b>Received Test Rads</b></p>
+								<p>From Faucert</p>
+							</div>
+						</li>
+						<li>
+							<div style="float: left;width: 70px;">
+								<p style="font-size: 18px;margin-top: 7px;">9:13:56</p>
+							</div>
+							<div style="float: left;padding: 0px 10px;">
+								<img src="img/download1.png" class="img img-responsive">
+							</div>
+							<div>
+								<p><b>Sent Test Rads</b></p>
+								<p>To Plers</p>
+							</div>
+						</li>
+						<li>
+							<div style="float: left;width: 70px;">
+								<p style="font-size: 18px;margin-top: 7px;">9:03:02</p>
+							</div>
+							<div style="float: left;padding: 0px 10px;">
+								<img src="img/download1.png" class="img img-responsive">
+							</div>
+							<div>
+								<p><b>Sent Test Rads</b></p>
+								<p>To Plers</p>
+							</div>
+						</li>
+						<li>
+							<div style="float: left;width: 70px;">
+								<p style="font-size: 18px;margin-top: 7px;">9:02:01</p>
+							</div>
+							<div style="float: left;padding: 0px 10px;">
+								<img src="img/download1.png" class="img img-responsive">
+							</div>
+							<div>
+								<p><b>Sent Test Rads</b></p>
+								<p>To Plers</p>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<!-- end main body -->
+
+			<!-- start right side -->
+			<div class="col-md-3 col-sm-3 col-lg-3" style="padding: 0;">
+				<div class="right_side" id="right_side">
+					<ul class="nav nav-tabs">
+					    <li class="active"><a data-toggle="tab" href="#send">Send</a></li>
+					    <li><a data-toggle="tab" href="#receive">Receive</a></li>
+					</ul>
+
+					<div class="tab-content" style="padding: 10px;">
+					    <div id="send" class="tab-pane fade in active">
+					    	<a href="#">View my contacts</a>
+					    	<form>
+								<input type="text" name="recipient" class="form-control" placeholder="Recipient"
+								v-model="searchKey">
+					    		<input type="text" name="amount" class="form-control" placeholder="Amount"><br>
+					    		<input type="submit" value="Send" class="btn btn-primary btn-block" name="">
+					    	</form>
+					    </div>
+					</div>
+
+				</div>
+				<ul>
+					<li v-for="item in filter">
+						{{ item.alias }}
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- add some style with javascript -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	<script type="text/javascript">
+		document.getElementById("left_side").parentElement.style.margin=0;
+		document.getElementById("left_side").parentElement.style.padding=0;
+	</script>
+	<script>
+		var app = new Vue({
+			el: "#app",
+			data : {
+				searchKey: '',
+				info : 
+						[{
+							"address":"9egHejbV2z1p1Luy2mER4BXsaHbyM67LdaLrUoJ9YSFRGCw1XPC",
+							"alias":"Jane"
+						}, {
+							"address":"9hHN98zwGKWrttBZ2eCU13g3hpLFXuLvSWFNSJVJiGMtaYRaYiC"
+						}, {
+							"address":"9gUVQUT5TvYQA3v8cLgHC15T7uN6beB88mbTJ2SdkbDqbSEX5jc"
+						}, {
+							"address":"9fbzfeeMaMkjKZcRLHkukFP8VffbQBsxNpivjjH4b5oZyASCLuC",
+							"alias":"My long lost friend Timothy Bangers The Third"
+						}, {
+							"address":"9hqxmYPYq2DQ31gasR1smJTnUvwYCyokM9FA7t858JnD8WJFiKJ",
+							"alias":"Joshua"
+						}, {
+							"address": "9gUVQUT5TvYQA3v8cLgHC15T7uN6beB88mbTJ2SdkbDqbSEX5jc",
+							"alias": "Robert"
+						}, {
+							"address": "9eeNsa8cs7ne1kQSbPbM3gfYRxVxzCBJV3mxdTMKriS3byY14Yd"
+						}, {
+							"address": "9i15dpSxi89V1LMK1WeUiwEnGo9eDJHaxdtoAhr5uDACHGBQzeT"
+						}, {
+							"address": "9fq9fUiSFNXt5iSMhmzXTzVqgEvFqKe5URAqPxjNArFdxR2nz8p",
+							"alias": "Marc"
+						}, {
+							"address": "9fBxPw7Po3vH3z3oSRwrgxFxKdcFEURYQGQhnTK3Z9npXshjSxr",
+							"alias": "Rubio"
+						}, {
+							"address": "9hzrhdxTviGUrcbNSgFFGp5XNAWd2HupZMrXYJZx5T9r7BxiaH2"
+						}, {
+							"address": "9gAvgmGFNtisdcDQVzia2kfN7r7c55EkouJorDZNcQYb3iVirdV",
+							"alias": "Dan"
+						}, {
+							"address": "9iQSiCbNTGpMYoRfoTtNLMaYqxNwsw7BXUSzFxXDLSRxNoL2GuE",
+							"alias": "Carmack"
+						}, {
+							"address": "9gsqA9CmLCktedY9eGveVMVzLJnmj9Em2auGiBnYzD7jWssyTtC"
+						}, {
+							"address": "9griU558xVTxwxSoFvXNXojxgFwBKZGwLoEkDFYx7J7sS1MNXmj",
+							"alias": "chatbot"
+						}]
+
+		    },
+			computed : {
+				filter : function(){
+					var self=this;
+					if(self.searchKey.length == 0) return []; 
+                    return this.info.filter(function(now){return (now.address && now.address.toLowerCase().indexOf(self.searchKey.toLowerCase())>=0) 
+					|| now.alias && now.alias.toLowerCase().indexOf(self.searchKey.toLowerCase())>=0});
+				}
+			}
+		})
+	</script>
+</body>
